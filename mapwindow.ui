@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mapWindow</class>
+ <widget class="QMainWindow" name="mapWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>405</width>
+    <height>525</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Map Fields for Export</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidgetCSV">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>171</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>41</width>
+      <height>421</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidgetSQL">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>171</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exportButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>440</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Export to CSV</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cancelButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>440</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>405</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave_Map"/>
+    <addaction name="actionSave_Map_As"/>
+    <addaction name="actionOpen_Map"/>
+    <addaction name="actionCancel"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSave_Map">
+   <property name="text">
+    <string>Save Map</string>
+   </property>
+  </action>
+  <action name="actionSave_Map_As">
+   <property name="text">
+    <string>Save Map As...</string>
+   </property>
+  </action>
+  <action name="actionCancel">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionOpen_Map">
+   <property name="text">
+    <string>Open Map</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
